@@ -18,13 +18,14 @@
       <h1>Elley</h1>
       <h4>An aspiring front-end web developer who loves challenges, based in Singapore...</h3>
     </div>
-    <div class="container">
+    <!-- <div class="container"> -->
+      <div class="about-me container-fluid">
       <h2>About me</h2>
-        <div class="row d-flex align-items-center about-me">
+        <div class="row d-flex align-items-center about-content">
           <div class="col-sm-3">
-            <img src="images/profile pic.jpg" class="d-block img-fluid rounded-circle" width="140px" alt="profile-img" />
+            <img src="images/profile pic.jpg" class="d-block img-fluid rounded-circle" width="180px" alt="profile-img" />
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-9 about-description">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -33,29 +34,73 @@
               velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
           </div>
+          </div>
       </div>
+      <div class="skills">
       <h2>Skills</h2>
-      <!-- <div class="row skill-row">
-        <div class="col-3 skill-icons text-center">
-            <img src="images/html5.svg" class="skill-icon" alt="" />
+          <div class="skill-icons skill-row">
+            <div class="row d-flex ">
+              <div class="col-3">
+                <img src="images/html5.svg"  alt="" />
+                </div>
+                <div class="col-3">
+                <img src="images/css3-alt.svg"  alt="" />
+                </div>
+                <div class="col-3">
+                <img src="images/square-js.svg"  alt="" />
+                </div>
+                <div class="col-3">
+                <img src="images/square-js.svg"  alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-3 skill-icons text-center">
-            <img src="images/css3-alt.svg" class="skill-icon" alt="" />
+        <h2>Projects</h2>
+        <div class="card-deck d-flex justify-content-around row">
+          <div class="card gradient-border col-lg-12">
+            <img class="card-img-top" src="images/keyboard collection.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Keyboard Collection</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between">
+            <button class="btn btn-dark ">Preview</button>
+            <button class="btn btn-light ">Github</button>
+          </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card gradient-border col-lg-12">
+            <img class="card-img-top" src="images/weather-app.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Weather App</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="d-flex justify-content-between">
+            <button class="btn btn-dark ">Preview</button>
+            <button class="btn btn-light ">Github</button>
+          </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card gradient-border col-lg-12">
+            <img class="card-img-top" src="images/weather-app.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <div class="d-flex justify-content-between">
+            <button class="btn btn-dark ">Preview</button>
+            <button class="btn btn-light ">Github</button>
+          </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
         </div>
-        <div class="col-3 skill-icons text-center">
-            <img src="images/square-js.svg" class="skill-icon" alt="" />
-        </div>
-      </div> -->
-        <div class="d-flex skill-icons skill-row">
-            <img src="images/html5.svg" class="justify-content-around" alt="" />
-            <img src="images/css3-alt.svg" class="justify-content-around" alt="" />
-            <img src="images/square-js.svg" class="justify-content-around" alt="" />
-            <img src="images/square-js.svg" class="justify-content-around" alt="" />
-        </div>
-      <!-- </div> -->
+      
+      
+        <!-- <div class="projects container-fluid">
       <h2>Projects</h2>
-      <div class="row">
-        <div class="col-4 projects">
+      <div class="row project-cards justify-content-around">
+        <div class="col-4 m-3 gradient-border cards">
           <img src="images/keyboard collection.jpg" class="p-5" width="100%" alt="keyboard-collection-img" />
           <h3>Keyboard Collection</h3>
           <p>
@@ -67,7 +112,7 @@
             <button class="btn btn-light ">Github</button>
           </div>
         </div>
-        <div class="col">
+        <div class="col-4 m-3 gradient-border cards">
           <img src="images/weather-app.jpg" class="p-5" width="100%" alt="" />
           <h3>Weather App</h3>
           <p>
@@ -79,7 +124,7 @@
             <button class="btn btn-light ">Github</button>
           </div>
         </div>
-        <div class="col">
+        <div class="col-4 m-3 gradient-border cards">
           <img src="images/weather-app.jpg" class="p-5" width="100%" alt="" />
           <h3>Keyboard Collection</h3>
           <p>
@@ -92,6 +137,7 @@
           </div>
         </div>
       </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
 </body>
 </html>

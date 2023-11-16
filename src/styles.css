@@ -1,21 +1,36 @@
+:root {
+  --border: 5px solid;
+}
+
+.gradient-border {
+  border: 5px solid;
+  border-image: linear-gradient(
+      to right bottom,
+      #f598a8,
+      #f6edb2,
+      #aea4e3,
+      #d3ffe8
+    )
+    1;
+}
+
 h1 {
   font-size: 60pt;
 }
 
 h2 {
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .hero {
-  padding: 140px;
-
+  padding: 180px;
   margin: 0 !important;
 }
 
 .skill-row {
   max-width: 670px;
   margin: 80px auto;
-  /* paddi */
 }
 
 .skill-icons img {
@@ -29,11 +44,42 @@ h2 {
 
 .about-me {
   background: #fcd1d1;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.about-content {
   max-width: 800px;
   margin: 10px auto;
-  padding: 40px 0;
+  /* padding: 0 !important; */
+}
+
+.about-description p {
+  font-size: 14pt;
 }
 
 .about-me img {
   margin: 10px auto;
+}
+
+.skills {
+  padding: 100px 0;
+  margin: 0;
+}
+
+.project-cards {
+  width: 60%;
+  margin: 30px auto;
+}
+
+.card {
+  max-width: 300px;
+  padding: 5px;
+  /* margin: 0 auto; */
+}
+
+@media (max-width: 870px) {
+  .card {
+    margin: 10px;
+  }
 }
