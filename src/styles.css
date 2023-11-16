@@ -1,0 +1,39 @@
+h1 {
+  font-size: 60pt;
+}
+
+h2 {
+  text-align: center;
+}
+
+.hero {
+  padding: 140px;
+
+  margin: 0 !important;
+}
+
+.skill-row {
+  max-width: 670px;
+  margin: 80px auto;
+  /* paddi */
+}
+
+.skill-icons img {
+  width: 60px;
+  margin: 20px auto;
+}
+
+.projects img {
+  padding: 20px 20px;
+}
+
+.about-me {
+  background: #fcd1d1;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 40px 0;
+}
+
+.about-me img {
+  margin: 10px auto;
+}
