@@ -5,7 +5,7 @@
 .gradient-border {
   border: 5px solid;
   border-image: linear-gradient(
-      to right bottom,
+      to left bottom,
       #f598a8,
       #f6edb2,
       #aea4e3,
@@ -14,18 +14,55 @@
     1;
 }
 
+body {
+  /* background: #f3eaea; */
+  color: #9b4b63;
+}
+
 h1 {
   font-size: 60pt;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 h2 {
   text-align: center;
   padding-bottom: 30px;
+  font-size: 22pt;
+  font-weight: bold;
 }
+
+/* button {
+} */
 
 .hero {
   padding: 180px;
-  margin: 0 !important;
+  /* margin: 0 !important; */
+  max-width: 1000px;
+  margin: auto 0 auto auto;
+}
+
+.hero-subtitle {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero- {
+  margin: 0 auto;
+  background: #fff5ec;
+}
+
+.hero h4 {
+  color: #303841;
+  font-weight: 300;
+}
+
+.main-pic {
+  /* padding: auto; */
+  /* height: 100%; */
+  width: 450px;
+  /* margin: auto 0 !important; */
+  margin-top: 80px;
 }
 
 .skill-row {
@@ -43,28 +80,39 @@ h2 {
 }
 
 .about-me {
-  background: #fcd1d1;
+  /* background: #d8b2e1; */
   width: 100%;
   padding: 100px 0;
+  color: #303841;
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 10px auto;
-  /* padding: 0 !important; */
 }
 
 .about-description p {
   font-size: 14pt;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  /* margin-left: 150px; */
 }
 
 .about-me img {
   margin: 10px auto;
+  padding: 10px;
+  width: 300px;
 }
 
 .skills {
   padding: 100px 0;
   margin: 0;
+  /* background: #2c3e4e; */
+  color: whitesmoke;
+  background: #f0f5bf;
+  background-attachment: fixed;
 }
 
 .project-cards {
@@ -73,13 +121,69 @@ h2 {
 }
 
 .card {
-  max-width: 300px;
+  width: 300px;
   padding: 5px;
   /* margin: 0 auto; */
+  margin: 30px 10px;
 }
 
-@media (max-width: 870px) {
+.card-deck {
+  margin: 30px auto;
+  max-width: 1000px;
+  /* padding: 20px; */
+}
+
+@media (max-width: 960px) {
+  .card-deck {
+    justify-content: center;
+  }
+
   .card {
     margin: 10px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero {
+    width: 100%;
+  }
+
+  .project-header {
+    margin: 0;
+  }
+
+  .project-btn {
+    font-size: 14pt;
+    margin: 10px 0;
+    padding: 8px 20px;
+    flex: 1;
+  }
+
+  .card-deck {
+    width: 100%;
+    margin: 0;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+
+  .card-title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  .card-text {
+    font-size: 14pt;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 370px) {
+  .card-deck {
+    margin: 0;
   }
 }
