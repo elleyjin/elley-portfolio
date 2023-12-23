@@ -15,8 +15,9 @@
 }
 
 body {
-  /* background: #f3eaea; */
+  background: #fff5ec;
   color: #9b4b63;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -32,9 +33,6 @@ h2 {
   font-weight: bold;
 }
 
-/* button {
-} */
-
 .hero {
   padding: 180px;
   /* margin: 0 !important; */
@@ -49,7 +47,14 @@ h2 {
 
 .hero- {
   margin: 0 auto;
-  background: #fff5ec;
+  background: #ead2df;
+}
+
+.parallax {
+  position: sticky;
+  /* display: inline-block; */
+  top: 0%;
+  z-index: -1;
 }
 
 .hero h4 {
@@ -110,9 +115,6 @@ h2 {
   padding: 100px 0;
   margin: 0;
   /* background: #2c3e4e; */
-  color: whitesmoke;
-  background: #f0f5bf;
-  background-attachment: fixed;
 }
 
 .project-cards {
@@ -131,6 +133,17 @@ h2 {
   margin: 30px auto;
   max-width: 1000px;
   /* padding: 20px; */
+}
+
+.second {
+  background: #cba8da;
+  color: #f5e2e4;
+
+  /* background-attachment: fixed; */
+}
+
+.project-header {
+  margin-top: 50px;
 }
 
 @media (max-width: 960px) {
