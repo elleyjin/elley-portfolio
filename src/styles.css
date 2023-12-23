@@ -34,7 +34,7 @@ h2 {
 }
 
 .hero {
-  padding: 180px;
+  padding: 140px;
   /* margin: 0 !important; */
   max-width: 1000px;
   margin: auto 0 auto auto;
@@ -50,12 +50,11 @@ h2 {
   background: #ead2df;
 }
 
-.parallax {
+/* .parallax {
   position: sticky;
-  /* display: inline-block; */
   top: 0%;
   z-index: -1;
-}
+} */
 
 .hero h4 {
   color: #303841;
@@ -63,10 +62,7 @@ h2 {
 }
 
 .main-pic {
-  /* padding: auto; */
-  /* height: 100%; */
-  width: 450px;
-  /* margin: auto 0 !important; */
+  max-width: 450px;
   margin-top: 80px;
 }
 
@@ -138,15 +134,53 @@ h2 {
 .second {
   background: #cba8da;
   color: #f5e2e4;
-
-  /* background-attachment: fixed; */
 }
 
 .project-header {
   margin-top: 50px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 40pt;
+  }
+
+  .hero {
+    padding-top: 60px;
+  }
+
+  .main-pic {
+    width: 380px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: 30pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  .hero h2 {
+    font-size: 16pt;
+  }
+
+  .hero h4 {
+    font-size: 16pt;
+  }
+
+  .main-pic {
+    width: 300px;
+    margin-top: 35px;
+  }
+
+  .hero {
+    padding-top: 20px;
+  }
+
   .card-deck {
     justify-content: center;
   }
@@ -154,6 +188,17 @@ h2 {
   .card {
     margin: 10px;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero_ {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-pic {
+    width: 280px;
   }
 }
 
