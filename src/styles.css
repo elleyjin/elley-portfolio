@@ -20,24 +20,8 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
-  font-size: 60pt;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-
-h2 {
-  text-align: center;
-  padding-bottom: 30px;
-  font-size: 22pt;
-  font-weight: bold;
-}
-
 .hero {
-  padding: 140px;
-  /* margin: 0 !important; */
-  max-width: 1000px;
-  margin: auto 0 auto auto;
+  padding: 140px 0;
 }
 
 .hero-subtitle {
@@ -50,20 +34,20 @@ h2 {
   background: #ead2df;
 }
 
+.hero-content {
+  width: 70%;
+  padding-left: 40px;
+  margin: 100px auto;
+}
+
 /* .parallax {
   position: sticky;
   top: 0%;
   z-index: -1;
 } */
 
-.hero h4 {
-  color: #303841;
-  font-weight: 300;
-}
-
 .main-pic {
-  max-width: 450px;
-  margin-top: 80px;
+  max-width: 100%;
 }
 
 .skill-row {
@@ -98,7 +82,6 @@ h2 {
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
-  /* margin-left: 150px; */
 }
 
 .about-me img {
@@ -140,47 +123,80 @@ h2 {
   margin-top: 50px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 800px) {
   h1 {
-    font-size: 40pt;
-  }
-
-  .hero {
-    padding-top: 60px;
-  }
-
-  .main-pic {
-    width: 380px;
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 980px) {
-  h1 {
-    font-size: 30pt;
+    font-size: 34pt;
+    padding: 18px 0;
+    font-weight: 600;
   }
 
   h2 {
-    font-size: 18pt;
-  }
-
-  .hero h2 {
-    font-size: 16pt;
+    font-size: 20pt;
   }
 
   .hero h4 {
     font-size: 16pt;
-  }
-
-  .main-pic {
-    width: 300px;
-    margin-top: 35px;
+    font-weight: 300;
   }
 
   .hero {
-    padding-top: 20px;
+    padding: 80px 0;
   }
 
+  .hero_ {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-pic {
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 40pt;
+    padding: 18px 0;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 28pt;
+  }
+
+  .hero h4 {
+    font-size: 18pt;
+    font-weight: 300;
+  }
+
+  .main-pic {
+    padding-right: 200px;
+  }
+}
+
+@media (min-width: 1850px) {
+  h1 {
+    font-size: 48pt;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 25px 0;
+  }
+
+  h2 {
+    font-size: 35pt;
+    font-weight: 400;
+  }
+
+  .hero h4 {
+    color: #303841;
+    font-weight: 300;
+    padding: 0;
+    font-size: 19pt;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 980px) {
   .card-deck {
     justify-content: center;
   }
@@ -191,20 +207,28 @@ h2 {
   }
 }
 
-@media (max-width: 800px) {
-  .hero_ {
-    display: flex;
-    flex-direction: row;
+@media (max-width: 660px) {
+  h1 {
+    font-size: 50pt;
+  }
+
+  .hero h2 {
+    font-size: 24pt;
+  }
+
+  .hero h4 {
+    font-size: 20pt;
+  }
+
+  .hero {
+    padding: 100px 100px;
+    width: 100%;
+    margin: 0;
   }
 
   .main-pic {
-    width: 280px;
-  }
-}
-
-@media (max-width: 660px) {
-  .hero {
-    width: 100%;
+    visibility: hidden;
+    position: absolute;
   }
 
   .project-header {
@@ -240,8 +264,30 @@ h2 {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 450px) {
   .card-deck {
     margin: 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 25pt;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero h2 {
+    font-size: 18pt;
+  }
+
+  .hero h4 {
+    font-size: 14pt;
+    padding: 0;
   }
 }
