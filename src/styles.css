@@ -1,5 +1,6 @@
 :root {
   --border: 5px solid;
+  --border-radius: 20px;
 }
 
 .gradient-border {
@@ -20,9 +21,11 @@ body {
   background-attachment: fixed;
 }
 
-.hero {
-  padding: 140px 0;
+h2 {
+  font-family: "Carattere", cursive;
+  margin: 0;
 }
+
 
 .hero-subtitle {
   text-align: left;
@@ -48,15 +51,17 @@ body {
 
 .main-pic {
   max-width: 100%;
+  border-radius: var(--border-radius);
 }
 
 .skill-row {
-  max-width: 670px;
-  margin: 80px auto;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .skill-icons img {
-  width: 60px;
+  width: 50px;
   margin: 20px auto;
 }
 
@@ -65,15 +70,15 @@ body {
 }
 
 .about-me {
-  /* background: #d8b2e1; */
   width: 100%;
-  padding: 100px 0;
+  padding: 0;
   color: #303841;
 }
 
 .about-content {
-  max-width: 1000px;
-  margin: 10px auto;
+  max-width: 60%;
+  margin: 100px auto 10px auto;
+  margin-bottom: 50px;
 }
 
 .about-description p {
@@ -84,21 +89,32 @@ body {
   margin: 0 auto;
 }
 
-.about-me img {
+.about-me-flex img {
   margin: 10px auto;
-  padding: 10px;
-  width: 300px;
+  /* padding: 10px; */
+  width: 75%;
+}
+
+.subtitles {
+  /* margin-top: 30px; */
+  padding: 10px 30px;
+  font-weight: bold;
 }
 
 .skills {
-  padding: 100px 0;
   margin: 0;
-  /* background: #2c3e4e; */
 }
 
 .project-cards {
   width: 60%;
   margin: 30px auto;
+}
+
+.project-btn {
+  font-size: 14pt;
+  margin: 10px 0;
+  padding: 8px 20px;
+  flex: 1;
 }
 
 .card {
@@ -114,8 +130,9 @@ body {
 }
 
 .second {
-  background: #cba8da;
-  color: #f5e2e4;
+  */
+  padding: 0 20px;
+  /* flex: 1; */
 }
 
 .project-header {
@@ -149,6 +166,8 @@ body {
 
   .main-pic {
     display: none;
+      border-radius: var(--border-radius);
+
   }
 }
 
@@ -179,6 +198,8 @@ body {
 
   .main-pic {
     padding-right: 50px;
+      border-radius: var(--border-radius);
+
   }
 
   .hero-content {
@@ -204,6 +225,8 @@ body {
 
   .main-pic {
     padding-right: 100px;
+      border-radius: var(--border-radius);
+
   }
 }
 
@@ -218,6 +241,10 @@ body {
   h2 {
     font-size: 35pt;
     font-weight: 400;
+  }
+
+  .hero {
+    padding: 140px 0;
   }
 
   .hero h4 {
@@ -261,11 +288,13 @@ body {
 
   .hero-content {
     padding-left: 0;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   .main-pic {
     display: none;
+      border-radius: var(--border-radius);
+
   }
 
   .project-header {
