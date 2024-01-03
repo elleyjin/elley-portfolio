@@ -52,6 +52,10 @@ h2 {
   max-width: 100%;
 }
 
+.about-container {
+  color: #303841;
+}
+
 .skill-row {
   margin: 10px auto;
 }
@@ -75,16 +79,8 @@ h2 {
   padding: 20px 20px;
 }
 
-.about-me {
-  width: 100%;
-  padding: 0;
-  color: #303841;
-}
-
-.about-content {
-  /* max-width: 70%; */
-  margin: 100px auto 10px auto;
-  margin-bottom: 50px;
+.about-container {
+  margin: 100px auto 60px auto;
 }
 
 .about-description {
@@ -99,9 +95,9 @@ h2 {
   margin: 0 auto;
 }
 
-.about-img {
+/* .about-img {
   padding: 0;
-}
+} */
 
 .subtitles {
   padding: 10px 45px;
@@ -223,11 +219,6 @@ h2 {
     padding: 50px 0;
   }
 
-  /* .hero_ {
-    display: flex;
-    flex-direction: row;
-  } */
-
   .main-pic {
     padding-right: 50px;
   }
@@ -236,7 +227,7 @@ h2 {
     padding-left: 10px;
   }
 
-  .about-content {
+  .about-container {
     max-width: 90%;
   }
 
@@ -260,13 +251,13 @@ h2 {
   .hero-text-container h4 {
     font-size: 18pt;
     font-weight: 300;
-hero-text h4  }
+  }
 
   .main-pic {
     padding-right: 100px;
   }
 
-  .about-content {
+  .about-container {
     max-width: 70%;
   }
 }
