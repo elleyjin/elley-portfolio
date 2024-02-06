@@ -5,6 +5,7 @@
   --secondary-color: #f76c6c;
   --word-color: #679289;
   --highlight: #f8e9a1;
+  --body-color: #fff5ec;
 }
 
 .gradient-border {
@@ -19,6 +20,27 @@
     1;
   background: #112d32;
   color: var(--word-color);
+}
+
+.highlight {
+  position: relative;
+  display: inline;
+  padding: 0;
+  background-image: linear-gradient(to bottom, var(--word-color), transparent);
+  background-repeat: repeat-y;
+  background-size: 23pt 100%;
+  color: var(--body-color);
+  opacity: 1;
+  animation: highlighter 2s linear infinite;
+}
+
+@keyframes highlighter {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 100% 200%;
+  }
 }
 
 @media (max-width: 766px) {
@@ -293,10 +315,35 @@ nav {
   margin-top: 10px;
   padding-top: 20px;
   color: white;
+  /* position: fixed;
+  top: 10; */
 }
 
 nav h3 {
   padding-left: 30px;
+}
+
+.social-container {
+  position: fixed;
+  bottom: 0;
+  left: 80px;
+  font-size: 22pt;
+  color: var(--word-color);
+  padding-bottom: 100px;
+  opacity: 0.5;
+}
+
+.social-icons {
+  padding: 10px;
+}
+
+.email {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0;
+  padding-top: 15px;
+  font-size: 14pt;
+  width: 42px;
 }
 
 .nav-container {
@@ -320,7 +367,7 @@ nav h3 {
 .hero-content h2 {
   color: var(--secondary-color);
   font-weight: 400;
-  font-size: 24pt;
+  font-size: 26pt;
 }
 
 .hero-container h4 {
@@ -357,6 +404,13 @@ nav h3 {
   padding: 30px;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.skill-container {
+  max-width: 70%;
+  margin: auto;
+  opacity: 0.6;
+  padding: 10px 0;
 }
 
 .skill-row {
@@ -410,10 +464,6 @@ nav h3 {
   color: var(--secondary-color);
 }
 
-.card-body {
-  /* background: var(--primary-color); */
-}
-
 .card-text {
   font-size: 12pt;
   color: var(--word-color);
@@ -438,10 +488,41 @@ nav h3 {
 }
 
 .project-btn {
-  font-size: 14pt;
+  font-size: 13pt;
   margin: 10px 0;
-  padding: 8px 20px;
+  padding: 8px 0;
   flex: 1;
+  /* opacity: 0.9; */
+}
+
+.preview-btn {
+  background: var(--primary-color);
+  color: var(--body-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.github-btn {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.project-btn:visited {
+  color: inherit;
+}
+
+.github-btn:hover {
+  background: var(--secondary-color);
+  transition: all 100ms ease-in-out;
+  color: var(--body-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.preview-btn:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  transition: all 100ms ease-in-out;
 }
 
 /* .parallax {

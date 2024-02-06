@@ -19,20 +19,27 @@
   </head>
   <body>
     <div class="container-fluid">
+      <div class="social-container d-flex flex-column" id="contact">
+        <i class="fa-brands fa-linkedin social-icons"></i>
+        <i class="fa-brands fa-instagram social-icons"></i>
+        <i class="fa-brands fa-github social-icons"></i>
+        <p class="email" id="email">elleyc1004@gmail.com</p>
+      </div>
       <div class="nav-container">
         <nav class="d-flex justify-content-between align-items-center">
           <h3>Elley Chan</h3>
           <ul>
-            <li>About</li>
-            <li>Work</li>
-            <li>Contact</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#" id="contact-button">Contact</a></li>
+            <!-- <li><button>Coming Soon</button></li> -->
           </ul>
         </nav>
       </div>
       <div class="row hero-container">
         <div class="col-md-8 hero-text-container text-start m-auto">
           <div class="hero-content m-auto">
-            <h2>I am an aspiring</h2>
+            <h2>I am a rising</h2>
             <h1>Front End
               <br />
               Web Developer
@@ -45,8 +52,8 @@
           <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/153/original/profile_pic_3d.jpg?1704344838" class="main-pic" alt="3d-elley-pic">
         </div>
       </div>
-      <div class="about-outer-container">
-        <div class="row container-fluid d-flex about-container" id="about">
+      <div class="about-outer-container" id="about">
+        <div class="row container-fluid d-flex about-container">
           <div class="col-xl-4 col-md m-auto about-img">
             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/154/original/me.jpg?1704344849" class="d-block rounded-circle img-fluid"  alt="profile-img" />
           </div>
@@ -58,9 +65,9 @@
               <br />
               I'm currently a full time mom, but aiming to get a job as a junior web developer in the near future!
             </p>
-            <div class="row">
+            <div class="row skill-container">
               <div class="skill-row align-items-center justify-content-center">
-                <h2 class="skill-header">Skills</h2>
+                <!-- <h2 class="skill-header">Skills</h2> -->
                 <div class="icons d-flex justify-content-center align-items-center">
                 <div class="col skill-icon">
                   <i class="fa-brands fa-html5"></i>
@@ -89,8 +96,8 @@
             <h5 class="card-title">Keyboard Collection</h5>
             <p class="card-text card-description">Build with HTML, CSS & Javascript. This projects shows about my keyboard collection & supports both light & dark mode.</p>
             <div class="d-flex justify-content-between">
-              <button class="btn btn-dark project-btn"><a href="https://keyboard-collection.netlify.app/" target="_blank">Preview</a></button>
-              <button class="btn btn-light project-btn"><a href="https://github.com/elleyjin/keyboard-collection" target="_blank">Github</a></button>
+              <button class="btn btn-dark project-btn preview-btn"><a href="https://keyboard-collection.netlify.app/" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Preview</a></button>
+              <button class="btn btn-light project-btn github-btn"><a href="https://github.com/elleyjin/keyboard-collection" target="_blank"><i class="fa-brands fa-github"></i> Github</a></button>
             </div>
             <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
           </div>
@@ -101,8 +108,8 @@
             <h5 class="card-title">Weather App</h5>
             <p class="card-text card-description">A weather app build from scratch with HTML, CSS, Javascript. A weather API is used to extract weather information & display real time weather conditions.</p>
             <div class="d-flex justify-content-around">
-              <button class="btn btn-dark project-btn"><a href="https://elleyweatherapp.netlify.app/" target="_blank">Preview</a></button>
-              <button class="btn btn-light project-btn"><a href="https://github.com/elleyjin/vanilla-weather-app" target="_blank">Github</a></button>
+              <button class="btn btn-dark project-btn preview-btn"><a href="https://elleyweatherapp.netlify.app/" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Preview</a></button>
+              <button class="btn btn-light project-btn github-btn"><a href="https://github.com/elleyjin/vanilla-weather-app" target="_blank"><i class="fa-brands fa-github"></i> Github</a></button>
             </div>
             <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
           </div>
@@ -113,8 +120,8 @@
             <h5 class="card-title">World Clock App</h5>
             <p class="card-text card-description">World clock project created with HTML, CSS & Javascript. Moment.js framework is used to extract local time of the countried selected.</p>
             <div class="d-flex justify-content-around">
-              <button class="btn btn-dark project-btn"><a href="https://elley-worldclock.netlify.app/" target="_blank">Preview</a></button>
-              <button class="btn btn-light project-btn"><a href="https://github.com/elleyjin/worldClock" target="_blank">Github</a></button>
+              <button class="btn btn-dark project-btn preview-btn"><a href="https://elley-worldclock.netlify.app/" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Preview</a></button>
+              <button class="btn btn-light project-btn github-btn"><a href="https://github.com/elleyjin/worldClock" target="_blank"><i class="fa-brands fa-github"></i> Github</a></button>
             </div>
             <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
           </div>
@@ -122,5 +129,6 @@
       </div>
       </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
