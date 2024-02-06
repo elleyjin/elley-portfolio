@@ -17,6 +17,8 @@
       #d3ffe8
     )
     1;
+  background: #112d32;
+  color: var(--word-color);
 }
 
 @media (max-width: 766px) {
@@ -127,7 +129,7 @@
   }
 
   .card {
-    min-width: 400px;
+    min-width: 280px;
     margin-top: 0;
   }
 
@@ -241,7 +243,7 @@ h1 {
 }
 
 h2 {
-  /* font-family: "Carattere", cursive; */
+  font-family: "Carattere", cursive;
   font-size: 30pt;
   margin: 0;
   font-weight: 100;
@@ -306,8 +308,7 @@ nav h3 {
 .hero-container {
   margin: 0 auto;
   background: var(--primary-color);
-  /* padding: 75px 0; */
-  height: 90vh;
+  height: 900px;
 }
 
 .hero-content {
@@ -319,7 +320,7 @@ nav h3 {
 .hero-content h2 {
   color: var(--secondary-color);
   font-weight: 400;
-  font-size: 16pt;
+  font-size: 24pt;
 }
 
 .hero-container h4 {
@@ -327,17 +328,17 @@ nav h3 {
   font-weight: 400;
 }
 
-/* .hero-text-container {
-  padding-bottom: 100px;
-} */
-
 .main-pic {
   max-width: 100%;
 }
 
 .about-container {
-  margin: 100px auto 60px auto;
-  color: #303841;
+  margin: 0 auto;
+  color: var(--word-color);
+}
+
+.about-outer-container {
+  background: var(--primary-color);
 }
 
 .about-header {
@@ -375,24 +376,26 @@ nav h3 {
 }
 
 .project-header {
-  margin-top: 100px;
+  margin: auto;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   width: 80%;
-  margin: 100px auto 0 auto;
+  padding: 200px 0 100px 0;
 }
 
 .card {
-  max-width: 350px;
+  max-width: 280px;
   padding: 0;
   margin: 30px 10px;
 }
 
 .card-img-top {
   border: 1px none;
-  height: 375px;
+  height: 280px;
   padding: 5px;
   object-fit: cover;
+  opacity: 0.8;
+  border-radius: 20px;
 }
 
 .card-deck {
@@ -404,15 +407,25 @@ nav h3 {
 .card-title {
   font-size: 18pt;
   padding-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.card-body {
+  /* background: var(--primary-color); */
 }
 
 .card-text {
-  font-size: 13pt;
+  font-size: 12pt;
+  color: var(--word-color);
 }
 
 .card-description {
   padding: 20px 0;
   height: 140px;
+}
+
+.projects-outer-container {
+  background: var(--primary-color);
 }
 
 .projects img {
