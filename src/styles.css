@@ -1,8 +1,10 @@
 :root {
   --border: 5px solid;
   --border-radius: 20px;
-  --primary-color: #ead2df;
-  --secondary-color: #9b4b63;
+  --primary-color: #071e22;
+  --secondary-color: #f76c6c;
+  --word-color: #679289;
+  --highlight: #f8e9a1;
 }
 
 .gradient-border {
@@ -231,12 +233,36 @@
 
 body {
   background: #fff5ec;
-  color: #9b4b63;
+  color: #f8e9a1;
+}
+
+h1 {
+  font-size: 58pt;
 }
 
 h2 {
-  font-family: "Carattere", cursive;
+  /* font-family: "Carattere", cursive; */
+  font-size: 30pt;
   margin: 0;
+  font-weight: 100;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 12pt;
+  font-weight: 500;
+  margin: 30px 0;
+  background: inherit;
+  border: 1px solid var(--secondary-color);
+  transition: all 100ms ease-in-out;
+  border-radius: 5px;
+  color: var(--secondary-color);
+  opacity: 0.9;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  color: whitesmoke;
 }
 
 a {
@@ -259,15 +285,12 @@ nav li {
   padding: 18px;
 }
 
-/* nav h3 {
-  margin-left: 150px;
-} */
-
 nav {
   width: 95%;
   margin: 0 auto;
   margin-top: 10px;
   padding-top: 20px;
+  color: white;
 }
 
 nav h3 {
@@ -283,6 +306,8 @@ nav h3 {
 .hero-container {
   margin: 0 auto;
   background: var(--primary-color);
+  /* padding: 75px 0; */
+  height: 90vh;
 }
 
 .hero-content {
@@ -291,9 +316,20 @@ nav h3 {
   margin: 100px auto;
 }
 
-.hero-text-container {
-  padding-bottom: 100px;
+.hero-content h2 {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 16pt;
 }
+
+.hero-container h4 {
+  color: var(--word-color);
+  font-weight: 400;
+}
+
+/* .hero-text-container {
+  padding-bottom: 100px;
+} */
 
 .main-pic {
   max-width: 100%;
