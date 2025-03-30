@@ -10,7 +10,7 @@
 }
 
 .gradient-border {
-  border: 4px solid;
+  border: 3px solid;
   border-image: linear-gradient(
       to left bottom,
       #f598a8,
