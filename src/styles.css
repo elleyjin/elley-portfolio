@@ -269,6 +269,7 @@ footer button {
 
 .card-title {
   font-size: 18pt;
+  height: 58px;
   padding-bottom: 10px;
   color: var(--secondary-color);
 }
